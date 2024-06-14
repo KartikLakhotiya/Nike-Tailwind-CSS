@@ -1,0 +1,39 @@
+/* Regular styles */
+body {
+    background-color: white;
+    color: black;
+  }
+  
+  /* Dark mode styles */
+  body.dark {
+    background-color: black;
+    color: white;
+  }
+  
+  /* Add more dark mode styles as needed */
+  .dark .navbar {
+    background-color: #333;
+    color: white;
+  }
+  
+  /* Example dark mode styles for sections */
+  .dark .footer {
+    background-color: #222;
+    color: white;
+  }
+  
+  .dark .padding {
+    background-color: #111;
+    color: white;
+  }
+  
+  .dark .padding-x {
+    background-color: #111;
+    color: white;
+  }
+  
+  .dark .bg-pale-blue {
+    background-color: #555;
+    color: white;
+  }
+  

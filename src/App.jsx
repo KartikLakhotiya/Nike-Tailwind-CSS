@@ -1,5 +1,5 @@
-import { useState } from 'react'
-import './App.css'
+import { useState, useEffect } from 'react';
+import './App.css';
 import {
   CustomerReviews,
   Footer,
@@ -13,11 +13,21 @@ import {
 import Navbar from './components/Navbar';
 
 const App = () => {
+  const [isDarkMode, setIsDarkMode] = useState(false);
+
+  // Effect to apply the dark mode class to the body
+  useEffect(() => {
+    if (isDarkMode) {
+      document.body.classList.add('dark');
+    } else {
+      document.body.classList.remove('dark');
+    }
+  }, [isDarkMode]);
 
   return (
-    <main className='relative'>
-      <Navbar />
-      <section className='xl:padding-l wide:padding-r padding-b'>
+    <main className={`relative ${isDarkMode ? 'dark' : ''}`}>
+      <Navbar isDarkMode={isDarkMode} setIsDarkMode={setIsDarkMode} />
+      <section className='footer'>
         <Hero />
 
         <section className='padding '>
@@ -44,13 +54,12 @@ const App = () => {
           <Subscribe />
         </section>
 
-        <section className='bg-black padding-x padding-t pb-8'>
+        <section className='bg-black padding-x padding-t pb-8 footer'>
           <Footer />
         </section>
-
       </section>
     </main>
   )
 }
 
-export default App
+export default App;

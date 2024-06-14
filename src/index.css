@@ -57,3 +57,9 @@
     @apply font-montserrat text-slate-gray text-lg leading-7;
   }
 }
+
+.footer{
+  padding-left: 0;
+  padding-right: 0;
+
+}
