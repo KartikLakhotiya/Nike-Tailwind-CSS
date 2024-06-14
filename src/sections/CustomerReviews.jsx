@@ -12,7 +12,7 @@ const CustomerReviews = () => {
             <div className="mt-24 flex flex-1 justify-evenly items-center max-lg:flex-col gap-14">
                 <div className="flex justify-center items-center flex-col">
                     <img
-                        src="src\assets\images\customer1.jpeg"
+                        src="/customer1.jpeg"
                         alt="customer"
                         className="rounded-full object-cover w-[120px] h-[120px]"
                     />
@@ -21,7 +21,7 @@ const CustomerReviews = () => {
                     </p>
                     <div className="mt-3 flex justify-center items-center gap-2.5">
                         <img
-                            src="src\assets\icons\star.svg"
+                            src="/star.svg"
                             width={24}
                             height={24}
                             alt="rating star"
@@ -33,7 +33,7 @@ const CustomerReviews = () => {
                 </div>
                 <div className="flex justify-center items-center flex-col">
                     <img
-                        src="src\assets\images\customer2.svg"
+                        src="/customer2.svg"
                         alt="customer"
                         className="rounded-full object-cover w-[120px] h-[120px]"
                     />
@@ -42,7 +42,7 @@ const CustomerReviews = () => {
                     </p>
                     <div className="mt-3 flex justify-center items-center gap-2.5">
                         <img
-                            src="src\assets\icons\star.svg"
+                            src="/star.svg"
                             width={24}
                             height={24}
                             alt="rating star"
