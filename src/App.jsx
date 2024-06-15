@@ -15,7 +15,6 @@ import Navbar from './components/Navbar';
 const App = () => {
   const [isDarkMode, setIsDarkMode] = useState(false);
 
-  // Effect to apply the dark mode class to the body
   useEffect(() => {
     if (isDarkMode) {
       document.body.classList.add('dark');

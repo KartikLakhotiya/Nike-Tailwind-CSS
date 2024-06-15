@@ -9,17 +9,17 @@ const Navbar = ({ isDarkMode, setIsDarkMode }) => {
     };
 
     return (
-        <header className='padding-x py-8 absolute z-10 w-full cursor-pointer'>
-            <nav className='flex justify-between items-center max-container'>
+        <header className={`sticky top-0 z-10 w-full cursor-pointer backdrop-blur-md ${isDarkMode ? 'bg-gray-900/70' : 'bg-white/70'}`}>
+            <nav className='flex justify-between items-center max-container padding-x py-8'>
                 <a href="/">
                     <img src={headerLogo} alt="logo" width={130} height={29} />
                 </a>
                 <ul className='flex-1 flex justify-center items-center gap-16 max-lg:hidden'>
                     {
-                        navLinks.map((items) => (
-                            <li key={items.label}>
-                                <a href={items.href} className='font-montserrat leading-normal text-lg text-slate-gray font-medium'>
-                                    {items.label}
+                        navLinks.map((item) => (
+                            <li key={item.label}>
+                                <a href={item.href} className='font-montserrat leading-normal text-lg text-slate-gray font-medium'>
+                                    {item.label}
                                 </a>
                             </li>
                         ))
