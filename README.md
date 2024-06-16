@@ -2,6 +2,9 @@
 
 This is a Nike E-commerce website Landing Page built with React and Tailwind CSS. The project includes various sections like Hero, Popular Products, Super Quality, Services, Special Offer, Customer Reviews, Subscribe, and Footer. The website also features a dark mode toggle. I built this project to practice Tailwind CSS.
 
+## Live Preview
+Click here to preview the website : https://nike-tailwind-css-virid.vercel.app/
+
 ## Table of Contents
 
 - [Installation](#Installation)
